@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="circle">      
+    </div>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                
+                <p>Kuliner Wonosobo</p>
+                
+                <p></p>
+            
+                </div>  
+                
+                    <button class="tab" onclick="bukaTab('home',this,'none')" id="default">Home</button>
+                    <button class="tab" onclick="bukaTab('food',this,'none')">Food</button>
+                    
+                    <button class="tab" onclick="bukaTab('about',this,'none')">About</button>
+                    
+                    <a href="https://instagram.com/reynaprilli_?igshid=MzNlNGNkZWQ4Mg==">Contact</a>
+              
+        </div>
+
+        
+
+        <div id="home" class="tabConten">
+            <div class="hometab">
+                <img id="gbrHome" src="banyak.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="teks">
+                <h2>Kuliner Wonosobo</h2>
+                <p>Pengen nyoba kuliner Wonosobo-an tapi ngga kesampean? <br>skuy bikin dirumah aja!</p>
+                <button id="btn" class="tab" onclick="bukaTab('food',this,'none')">Cari Kuliner!</button>
+            </div>
+        </div>
+            
+
+        <div id="food" class="tabConten">
+            
+            
+            <select class="none" id="jenisKuliner">
+
+                <option value="op1" id="select" >Mie Ongklok</option>
+                <option value="op2">Tempe Kemul</option>
+                <option value="op3">Manisan Carica</option>
+                <option value="op4">Nasi Megono</option>
+              </select>
+            
+
+            <div class="subContent" id="ctn1" style="display: none;">
+                <img src="miee.jpg" alt="mie">
+                <h2>Mie Ongklok</h2>
+                <p>Mie ongklok adalah mie rebus khas kota Wonosobo dan sekitarnya. Mie rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut. Pendampingnya biasanya adalah sate sapi, tempe kemul, serta keripik tahu.</p>
+                <a href="https://youtu.be/qQtsykGlJoQ?si=7AYIU2bQRndaf60x"><button>Resep :</button></a>
+            </div>
+
+            <div class="subContent" id="ctn2" style="display: none;">
+                <img src="tempee.jpg" alt="mie">
+                <h2>Tempe Kemul</h2>
+                <p>Tempe Kemul merupakan salah satu makanan ringan yang berasal dari Wonosobo. Makanan ini terbuat dari tempe yang digoreng dengan dibalut gandum, pati atau tepung singkong juga tepung beras dan biasanya ditambah daun kucai untuk pelengkap.Kemul dalam bahasa Jawa berarti selimut, artinya tempe kemul merupakan tempe yang digoreng dengan diselimuti tepung yang telah dibumbui..</p>
+                <a href="https://youtu.be/vywMFyan8yQ?si=ELq6nbQ3ifV5ZHyM"><button>Resep :</button></a>
+            </div>
+
+
+            <div class="subContent" id="ctn3" style="display: none;">
+                <img src="caricaa.jpg" alt="mie">
+                <h2>Carica</h2>
+                <p>Carica adalah makanan khas dari daerah Wonosobo, Jawa Tengah. Buah carica masih satu keluarga dengan pepaya. Tetapi carica memiliki ukuran lebih kecil. Bentuk buah seperti perpaduan antara buah kakao dan pepaya. Carica biasanya dibuat manisan khas Wonosobo. Mengutip dari buku Kuliner Dunia Christie Damayanti, carica tumbuh di dataran tinggi sekitar 1.500 sampai 3.000 meter diatas permukaan laut. Berikut penjelasan lengkap tentang carica.</p>
+                <a href="https://youtu.be/ZeYOkr-WZao?si=UqAihK4s57V8FLpL"><button>Resep :</button></a>
+            </div>
+
+            <div class="subContent" id="ctn4" style="display: none;">
+                <img src="megono.jpg" alt="mie">
+                <h2>Nasi Megono</h2>
+                <p>Ciri khas megono Wonosobo adalah adanya tambahan irisan kubis hijau, parutan kelapa, dan ebi. Bumbu megono Wonosobo sendiri terdiri dari bawang merah, bawang putih, garam dan cabai. Parutan kelapa dan ebi tersebut yang memberikan rasa gurih.</p>
+                <a href="https://youtu.be/B68Sxnh6lkQ?si=-bYO-5kSVD3DZG5g"><button>Resep :</button></a>
+            </div>
+
+
+
+            <div style="height: 200px; position: absolute;"></div>
+
+
+
+        </div>
+           
+        <div id="about" class="tabConten">
+            <h1>Kuliner Wonosobo</h1>
+            <p>
+                Wonosobo tidak hanya terkenal dengan tempat wisatanya saja, namun juga dengan kulinernya yang khas.Wonosobo memiliki banyak sekali kuliner yang wajib kalian coba saat liburan disana.Namun tidak usah khawatir jika belum bisa liburan ke Wonosobo, karena sekarang kalian bisa membuat sendiri kuliner khas Wonosobo dari rumah.
+
+<br><br>Dengan website ini saya berharap banyak orang yang terbantu karena website ini memiliki banyak manfaat salah satunya untuk mempermudah pencarian resep makanan khas Wonosobo dan saya juga memberikan panduan memasak yang jelas melalui video yang bisa dilihat melalui channel YouTube
+            </p>           
+
+            <div class="cover">
+
+                <div class="link">
+                    <a href="https://instagram.com/reynaprilli_?igshid=MzNlNGNkZWQ4Mg=="><img src="ig.jpg" alt=""></a>
+                </div>
+                <div class="link">
+                    
+                    <a href="https://instagram.com/reynaprilli_?igshid=MzNlNGNkZWQ4Mg=="><img src="ig.jpg" alt=""></a>
+                </div>
+                <div class="link">
+                    <a href="https://instagram.com/reynaprilli_?igshid=MzNlNGNkZWQ4Mg=="><img src="ig.jpg" alt=""></a>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
